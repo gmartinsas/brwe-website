@@ -1,1 +1,79 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* Variáveis e Métodos */
+@font-face {
+  font-family: "deutschlander-regular";
+  src: url("../src/fonts/deutschlander/deutschlander-webfont.woff2") format("woff2"), url("../src/fonts/deutschlander/deutschlander-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modak-regular";
+  src: url("../src/fonts/modak/modak-regular-webfont.woff2") format("woff2"), url("../src/fonts/modak/modak-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "worksans-italic";
+  src: url("../src/fonts/worksans/worksans-italic-variablefont_wght-webfont.woff2") format("woff2"), url("../src/fonts/worksans/worksans-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "worksans-regular";
+  src: url("../src/fonts/worksans/worksans-variablefont_wght-webfont.woff2") format("woff2"), url("../src/fonts/worksans/worksans-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Classes Base */
+.pai {
+  display: flex;
+}
+
+.titulo {
+  font-family: "modak-regular";
+}
+
+.subtitulo {
+  font-family: "moche-bold";
+}
+
+.texto-corrido {
+  font-family: "deutschlander-regular";
+}
+
+/* HTML */
+body {
+  background: #F9FEE5;
+  height: 100vh;
+}
+
+.navbar {
+  height: 118px;
+  gap: 500px;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+#logo__principal {
+  height: 77px;
+}
+
+.item__menu {
+  text-decoration: none;
+  color: #232323;
+  font-size: 64px;
+  text-transform: uppercase;
+  margin-left: 16px;
+}
+.item__menu .item__menu:hover {
+  color: #0673FA;
+}
+
+main {
+  height: 760px;
+}
+main img {
+  height: 564px;
+  width: 580px;
+}/*# sourceMappingURL=style.css.map */
