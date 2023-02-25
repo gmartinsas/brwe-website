@@ -34,7 +34,7 @@
 }
 
 .subtitulo {
-  font-family: "moche-bold";
+  font-family: "worksans-italic";
 }
 
 .texto-corrido {
@@ -76,4 +76,7 @@ main {
 main img {
   height: 564px;
   width: 580px;
+}
+main h1 {
+  font-weight: lighter;
 }/*# sourceMappingURL=style.css.map */

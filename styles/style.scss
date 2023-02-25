@@ -3,8 +3,11 @@
 $cor-bg-amarelo: #F9FEE5;
 $cor-texto: #232323;
 $cor-paleta-azul: #0673FA;
+$cor-paleta-verde: #3ab509;
+$cor-paleta-vermelho: #df3427;
+$cor-paleta-roxo: #aa21e5;
 $fonte-titulo: 'modak-regular';
-$fonte-subtitulo: 'moche-bold';
+$fonte-subtitulo: 'worksans-italic';
 $fonte-texto-corrido: 'deutschlander-regular';
 
 // @mixin 
@@ -96,6 +99,10 @@ main {
     img {
         height: 564px;
         width: 580px;
+    }
+
+    h1 {
+        font-weight: lighter;
     }
 }
 
