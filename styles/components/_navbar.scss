@@ -1,0 +1,23 @@
+.navbar {
+    height: 118px;
+    gap: 500px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+#logo__principal {
+    height: 77px;
+}
+
+.item__menu {
+    text-decoration: none;
+    color: $cor-texto;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-left: 16px;
+
+    .item__menu:hover {
+        color: $cor-paleta-azul;
+    }
+}

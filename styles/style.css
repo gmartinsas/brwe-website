@@ -41,7 +41,6 @@
   font-family: "deutschlander-regular";
 }
 
-/* HTML */
 body {
   background: #F9FEE5;
   height: 100vh;
@@ -70,6 +69,7 @@ body {
   color: #0673FA;
 }
 
+/* HTML */
 main {
   height: 760px;
 }

@@ -1,0 +1,68 @@
+/* Variáveis e Métodos */
+
+$cor-bg-amarelo: #F9FEE5;
+$cor-texto: #232323;
+$cor-paleta-azul: #0673FA;
+$cor-paleta-verde: #3ab509;
+$cor-paleta-vermelho: #df3427;
+$cor-paleta-roxo: #aa21e5;
+$fonte-titulo: 'modak-regular';
+$fonte-subtitulo: 'worksans-italic';
+$fonte-texto-corrido: 'deutschlander-regular';
+
+// @mixin 
+
+@font-face {
+    font-family: 'deutschlander-regular';
+    src: url('../src/fonts/deutschlander/deutschlander-webfont.woff2') format('woff2'),
+         url('../src/fonts/deutschlander/deutschlander-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'modak-regular';
+    src: url('../src/fonts/modak/modak-regular-webfont.woff2') format('woff2'),
+         url('../src/fonts/modak/modak-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'worksans-italic';
+    src: url('../src/fonts/worksans/worksans-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../src/fonts/worksans/worksans-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'worksans-regular';
+    src: url('../src/fonts/worksans/worksans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../src/fonts/worksans/worksans-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Classes Base */
+
+.pai {
+    display: flex;
+}
+
+.titulo {
+    font-family: $fonte-titulo;
+}
+
+.subtitulo {
+    font-family: $fonte-subtitulo;
+}
+
+.texto-corrido {
+    font-family: $fonte-texto-corrido;
+}
+
+body {
+    background: $cor-bg-amarelo;
+    height: 100vh;
+}
