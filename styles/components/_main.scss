@@ -1,0 +1,50 @@
+@import '../abstract/variaveis';
+
+main {
+    height: 760px;
+
+    #main__content {
+        width: 1466px;
+        height: 577px;
+
+        img {
+            height: 564px;
+            width: 580px;
+            margin: 115px 0 0 80px;
+        }
+
+        #main__box {
+            height: 240px;
+            width: 800px;
+            border: 2px solid #000;
+            border-radius: 174px;
+            text-align: end;
+            position: absolute;
+            left: 746px;
+            top: 392px;
+
+            #main__text {
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                top: 56px;
+                left: 111px;
+
+                h1 {
+                    font-weight: lighter;
+                    font-size: 36px;
+                    margin: 0px;
+                }
+    
+                h2 {
+                    font-size: 56px;
+                    margin: 0px;
+
+                    & strong {
+                        color: $cor-paleta-azul;
+                    }
+                }
+            }
+        }
+    }
+}

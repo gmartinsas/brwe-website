@@ -1,3 +1,5 @@
+@import '../abstract/variaveis';
+
 .navbar {
     height: 118px;
     gap: 500px;
@@ -17,7 +19,7 @@
     text-transform: uppercase;
     margin-left: 16px;
 
-    .item__menu:hover {
+    &:hover {
         color: $cor-paleta-azul;
     }
 }

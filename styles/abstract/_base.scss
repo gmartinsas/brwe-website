@@ -1,17 +1,7 @@
 /* Variáveis e Métodos */
+@import './variaveis';
 
-$cor-bg-amarelo: #F9FEE5;
-$cor-texto: #232323;
-$cor-paleta-azul: #0673FA;
-$cor-paleta-verde: #3ab509;
-$cor-paleta-vermelho: #df3427;
-$cor-paleta-roxo: #aa21e5;
-$fonte-titulo: 'modak-regular';
-$fonte-subtitulo: 'worksans-italic';
-$fonte-texto-corrido: 'deutschlander-regular';
-
-// @mixin 
-
+/* Webfonts */
 @font-face {
     font-family: 'deutschlander-regular';
     src: url('../src/fonts/deutschlander/deutschlander-webfont.woff2') format('woff2'),
@@ -45,7 +35,6 @@ $fonte-texto-corrido: 'deutschlander-regular';
 }
 
 /* Classes Base */
-
 .pai {
     display: flex;
 }
@@ -62,7 +51,9 @@ $fonte-texto-corrido: 'deutschlander-regular';
     font-family: $fonte-texto-corrido;
 }
 
+/* HTML */
 body {
     background: $cor-bg-amarelo;
     height: 100vh;
+    overflow-x: hidden;
 }

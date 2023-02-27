@@ -1,18 +1,12 @@
 @import './abstract/base';
 @import './components/navbar';
+@import './components/main';
 
 /* HTML */
 
-main {
-    height: 760px;
-
+article {
     img {
-        height: 564px;
-        width: 580px;
-    }
-
-    h1 {
-        font-weight: lighter;
+        width: 100%;
     }
 }
 

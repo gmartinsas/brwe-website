@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Variáveis e Métodos */
+/* Webfonts */
 @font-face {
   font-family: "deutschlander-regular";
   src: url("../src/fonts/deutschlander/deutschlander-webfont.woff2") format("woff2"), url("../src/fonts/deutschlander/deutschlander-webfont.woff") format("woff");
@@ -41,9 +42,11 @@
   font-family: "deutschlander-regular";
 }
 
+/* HTML */
 body {
   background: #F9FEE5;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -65,18 +68,53 @@ body {
   text-transform: uppercase;
   margin-left: 16px;
 }
-.item__menu .item__menu:hover {
+.item__menu:hover {
+  color: #0673FA;
+}
+
+main {
+  height: 760px;
+}
+main #main__content {
+  width: 1466px;
+  height: 577px;
+}
+main #main__content img {
+  height: 564px;
+  width: 580px;
+  margin: 115px 0 0 80px;
+}
+main #main__content #main__box {
+  height: 240px;
+  width: 800px;
+  border: 2px solid #000;
+  border-radius: 174px;
+  text-align: end;
+  position: absolute;
+  left: 746px;
+  top: 392px;
+}
+main #main__content #main__box #main__text {
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 56px;
+  left: 111px;
+}
+main #main__content #main__box #main__text h1 {
+  font-weight: lighter;
+  font-size: 36px;
+  margin: 0px;
+}
+main #main__content #main__box #main__text h2 {
+  font-size: 56px;
+  margin: 0px;
+}
+main #main__content #main__box #main__text h2 strong {
   color: #0673FA;
 }
 
 /* HTML */
-main {
-  height: 760px;
-}
-main img {
-  height: 564px;
-  width: 580px;
-}
-main h1 {
-  font-weight: lighter;
+article img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
