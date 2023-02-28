@@ -23,7 +23,7 @@ main {
             left: 746px;
             top: 392px;
 
-            #main__text {
+            #main__inner_box {
                 flex-direction: column;
                 justify-content: center;
                 position: absolute;
@@ -33,6 +33,7 @@ main {
                 h1 {
                     font-weight: lighter;
                     font-size: 36px;
+                    letter-spacing: -1px;
                     margin: 0px;
                 }
     

@@ -1,0 +1,19 @@
+@import '../abstract/variaveis';
+
+#section__links_externos {
+    height: 284px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 57px;
+        font-weight: 100;
+        margin: 0 0 16px 0;
+    }
+
+    #section__links {
+        gap: 32px;
+    }
+
+}

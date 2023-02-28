@@ -94,24 +94,87 @@ main #main__content #main__box {
   left: 746px;
   top: 392px;
 }
-main #main__content #main__box #main__text {
+main #main__content #main__box #main__inner_box {
   flex-direction: column;
   justify-content: center;
   position: absolute;
   top: 56px;
   left: 111px;
 }
-main #main__content #main__box #main__text h1 {
+main #main__content #main__box #main__inner_box h1 {
   font-weight: lighter;
   font-size: 36px;
+  letter-spacing: -1px;
   margin: 0px;
 }
-main #main__content #main__box #main__text h2 {
+main #main__content #main__box #main__inner_box h2 {
   font-size: 56px;
   margin: 0px;
 }
-main #main__content #main__box #main__text h2 strong {
+main #main__content #main__box #main__inner_box h2 strong {
   color: #0673FA;
+}
+
+#section__institucional {
+  height: 655px;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+}
+#section__institucional #section__institucional_texto {
+  width: 560px;
+  height: 510px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+#section__institucional #section__institucional_texto h1 {
+  font-size: 50px;
+  font-weight: 100;
+  margin: 0px;
+}
+#section__institucional #section__institucional_texto p {
+  font-size: 42px;
+  margin: 0px;
+}
+#section__institucional #section__institucional_texto #valores {
+  margin-top: 12px;
+}
+#section__institucional img {
+  width: 600px;
+  height: 511px;
+}
+
+#section__projetos img {
+  width: 20%;
+  height: 20%;
+}
+
+#section__links_externos {
+  height: 284px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#section__links_externos h1 {
+  font-size: 57px;
+  font-weight: 100;
+  margin: 0 0 16px 0;
+}
+#section__links_externos #section__links {
+  gap: 32px;
+}
+
+footer {
+  height: 80px;
+  background-color: #0673FA;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  font-size: 57px;
+  margin: 0px;
 }
 
 /* HTML */

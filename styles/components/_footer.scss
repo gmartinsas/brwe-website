@@ -1,0 +1,14 @@
+@import '../abstract/variaveis';
+
+footer {
+    height: 80px;
+    background-color: $cor-paleta-azul;
+    align-items: center;
+    justify-content: center;
+    
+    p {
+        color: white;
+        font-size: 57px;
+        margin: 0px;
+    }
+}
