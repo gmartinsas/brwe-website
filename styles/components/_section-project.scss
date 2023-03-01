@@ -1,8 +1,63 @@
 @import '../abstract/variaveis';
 
 #section__projetos {
-    img {
-        width: 20%;
-        height: 20%;
+    flex-direction: column;
+    align-items: center;
+
+    #section__projetos_tags {
+        margin-bottom: 64px;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    #section__projetos_banners {
+        width: 955px;
+        height: 676px;
+        flex-direction: column;
+        align-items: center;
+        
+        // Alterar cor da variável de acordo com o projeto clicado.
+        border: 2px $cor-paleta-verde solid;
+        
+        border-radius: 24px;
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 0;
+            color: $cor-paleta-verde;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin: 8px 0 40px 0;
+            letter-spacing: -1px;
+            font-weight: lighter;
+        }
+
+        img {
+            width: 70%;
+            height: 70%;
+            border-radius: 16px;
+            margin-bottom: 18px;
+        }
+        
+        span {
+            background-color: $cor-paleta-verde;
+            text-align: center;
+            width: 440px;
+            height: 48px;
+            font-size: 21px;
+            border-radius: 6px;
+            margin-bottom: 36px;
+
+            a {
+                text-decoration: none;
+                color: #FFF;
+                line-height: 36px;
+            }
+        }
     }
 }

@@ -41,10 +41,15 @@
 
 .titulo {
     font-family: $fonte-titulo;
+    font-weight: 100;
 }
 
 .subtitulo {
     font-family: $fonte-subtitulo;
+}
+
+.subtitulo-normal {
+    font-family: $fonte-subtitulo-normal;
 }
 
 .texto-corrido {
