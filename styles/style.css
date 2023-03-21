@@ -56,7 +56,6 @@ body {
 
 .navbar {
   height: 118px;
-  gap: 500px;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #000;
@@ -77,6 +76,22 @@ body {
   color: #0673FA;
 }
 
+@media (max-width: 480px) {
+  .navbar {
+    height: 2fr;
+  }
+  .navbar .lista__menu {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  li {
+    display: none;
+  }
+  li:last-child {
+    display: flex;
+  }
+}
 main {
   height: 760px;
 }
