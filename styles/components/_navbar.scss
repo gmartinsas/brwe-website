@@ -1,6 +1,5 @@
 @import '../abstract/variaveis';
 
-
 .navbar {
     height: 118px;
     justify-content: space-around;
@@ -24,23 +23,30 @@
     }
 }
 
-
+// Dispositivos Móveis
 @media (max-width: 480px) {
-    .navbar {
-        height: 2fr;
+    body {
+        overflow-x: none;
 
-        .lista__menu {
-            display: none;
+        .navbar {
+            height: 2fr;
+    
+            .lista__menu {
+                display: none;
+            }
         }
-    }
+    }    
 }
 
+// Tablets
 @media (min-width: 481px) and (max-width: 768px) {
-    li {
-        display: none;
-    }
-
-    li:last-child {
-        display: flex;
+    body {
+        li {
+            display: none;
+        }
+    
+        li:last-child {
+            display: flex;
+        }
     }
 }
