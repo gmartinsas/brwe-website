@@ -2,10 +2,11 @@
 
 main {
     height: 760px;
-
+    
     #main__content {
-        width: 1466px;
-        height: 577px;
+        height: 760px;
+        justify-content: space-between;
+        align-items: center;
 
         img {
             height: 564px;
@@ -18,54 +19,85 @@ main {
             width: 40%;
             border: 2px solid #000;
             border-radius: 175px 0 0 175px;
-            text-align: end;
-            position: absolute;
-            right: 0px;
-            top: 400px;
-
+            
             #main__inner_box {
                 flex-direction: column;
-                justify-content: center;
-                position: absolute;
-                top: 56px;
-                left: 111px;
+                text-align: end;
+                position: relative;
+                top: 25%;
+                right: 1em;
 
                 h1 {
                     font-weight: lighter;
-                    font-size: 36px;
+                    font-size: 2em;
                     letter-spacing: -1px;
                     margin: 0px;
                 }
     
                 h2 {
-                    font-size: 56px;
+                    font-size: 3em;
                     margin: 0px;
 
                     & strong {
                         color: $cor-paleta-azul;
                     }
                 }
+
+                p {
+                    display: none;
+                }
             }
         }
     }
 }
 
+// fazer um media query pra atributos comuns entre as resoluções mobile e tablet
+
+
 // Dispositivos Móveis
 @media (max-width: 480px) {
-    // body {
-
-    // }  
+    //
 }
 
 // Tablets
 @media (min-width: 481px) and (max-width: 768px) {
-    // body {
+    main {
+        height: 1440px;
+        
+        #main__content {
+            flex-direction: column;
+    
+            img {
+                justify-content: center;
+                margin: 3em 0 0 0;
+            }
+    
+            #main__box {
+                border-style: none;
+                border-radius: 0;
+                margin-top: 6rem;
+                width: 100%;
+                justify-content: center;
+                background-color: $cor-paleta-amarelo;
 
-    // }
-}
-
-@media (min-width: 769px) {
-    .main__content {
-        flex-direction: column;
+                #main__inner_box {
+                    justify-content: center;
+                    
+                    h1 {
+                        text-align: center;
+                    }
+    
+                    h2 {
+                        text-align: center;
+                    }
+    
+                    p {
+                        font-size: 3rem;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }

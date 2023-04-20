@@ -55,7 +55,7 @@ body {
 }
 
 .navbar {
-  height: 118px;
+  height: 120px;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #000;
@@ -68,9 +68,9 @@ body {
 .item__menu {
   text-decoration: none;
   color: #232323;
-  font-size: 64px;
+  font-size: 4em;
   text-transform: uppercase;
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 .item__menu:hover {
   color: #0673FA;
@@ -99,8 +99,9 @@ main {
   height: 760px;
 }
 main #main__content {
-  width: 1466px;
-  height: 577px;
+  height: 760px;
+  justify-content: space-between;
+  align-items: center;
 }
 main #main__content img {
   height: 564px;
@@ -112,35 +113,63 @@ main #main__content #main__box {
   width: 40%;
   border: 2px solid #000;
   border-radius: 175px 0 0 175px;
-  text-align: end;
-  position: absolute;
-  right: 0px;
-  top: 400px;
 }
 main #main__content #main__box #main__inner_box {
   flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 56px;
-  left: 111px;
+  text-align: end;
+  position: relative;
+  top: 25%;
+  right: 1em;
 }
 main #main__content #main__box #main__inner_box h1 {
   font-weight: lighter;
-  font-size: 36px;
+  font-size: 2em;
   letter-spacing: -1px;
   margin: 0px;
 }
 main #main__content #main__box #main__inner_box h2 {
-  font-size: 56px;
+  font-size: 3em;
   margin: 0px;
 }
 main #main__content #main__box #main__inner_box h2 strong {
   color: #0673FA;
 }
+main #main__content #main__box #main__inner_box p {
+  display: none;
+}
 
-@media (min-width: 769px) {
-  .main__content {
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    height: 1440px;
+  }
+  main #main__content {
     flex-direction: column;
+  }
+  main #main__content img {
+    justify-content: center;
+    margin: 3em 0 0 0;
+  }
+  main #main__content #main__box {
+    border-style: none;
+    border-radius: 0;
+    margin-top: 6rem;
+    width: 100%;
+    justify-content: center;
+    background-color: #f3a712;
+  }
+  main #main__content #main__box #main__inner_box {
+    justify-content: center;
+  }
+  main #main__content #main__box #main__inner_box h1 {
+    text-align: center;
+  }
+  main #main__content #main__box #main__inner_box h2 {
+    text-align: center;
+  }
+  main #main__content #main__box #main__inner_box p {
+    font-size: 3rem;
+    text-align: center;
+    display: block;
   }
 }
 #section__institucional {

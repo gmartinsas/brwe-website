@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 .navbar {
-    height: 118px;
+    height: 120px;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #000;
@@ -14,9 +14,9 @@
 .item__menu {
     text-decoration: none;
     color: $cor-texto;
-    font-size: 64px;
+    font-size: 4em;
     text-transform: uppercase;
-    margin-left: 16px;
+    margin-left: 1rem;
 
     &:hover {
         color: $cor-paleta-azul;
