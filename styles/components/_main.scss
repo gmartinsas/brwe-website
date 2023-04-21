@@ -25,7 +25,7 @@ main {
                 text-align: end;
                 position: relative;
                 top: 25%;
-                right: 1em;
+                left: 15%;
 
                 h1 {
                     font-weight: lighter;
@@ -51,16 +51,21 @@ main {
     }
 }
 
-// fazer um media query pra atributos comuns entre as resoluções mobile e tablet
-
-
-// Dispositivos Móveis
+// Dispositivos Mobile
 @media (max-width: 480px) {
-    //
+    main {
+        #main__content {
+            img {
+                height: auto;
+                max-width: 80%;
+            }
+        }
+        
+    }
 }
 
 // Tablets
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 1205px) {
     main {
         height: 1440px;
         
@@ -77,12 +82,17 @@ main {
                 border-radius: 0;
                 margin-top: 6rem;
                 width: 100%;
+                height: auto;
                 justify-content: center;
                 background-color: $cor-paleta-amarelo;
 
                 #main__inner_box {
-                    justify-content: center;
-                    
+                    position: initial;
+                    align-items: center;
+                    width: 80%;
+                    height: auto;
+                    padding: 3em 0 3em 0;
+
                     h1 {
                         text-align: center;
                     }
@@ -98,6 +108,11 @@ main {
                     }
                 }
             }
+        }
+    }
+    article {
+        img {
+            display: none;
         }
     }
 }
