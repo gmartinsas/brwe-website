@@ -138,12 +138,6 @@ main #main__content #main__box #main__inner_box p {
   display: none;
 }
 
-@media (max-width: 480px) {
-  main #main__content img {
-    height: auto;
-    max-width: 80%;
-  }
-}
 @media (max-width: 1205px) {
   main {
     height: 1440px;
@@ -154,6 +148,8 @@ main #main__content #main__box #main__inner_box p {
   main #main__content img {
     justify-content: center;
     margin: 3em 0 0 0;
+    height: auto;
+    max-width: 80%;
   }
   main #main__content #main__box {
     border-style: none;
@@ -216,6 +212,22 @@ main #main__content #main__box #main__inner_box p {
   height: 511px;
 }
 
+@media (max-width: 1205px) {
+  #section__institucional {
+    flex-direction: column;
+  }
+  #section__institucional #section__institucional_texto {
+    position: initial;
+    height: auto;
+    max-width: 80%;
+  }
+  #section__institucional img {
+    position: relative;
+    bottom: 5em;
+    height: auto;
+    max-width: 80%;
+  }
+}
 #section__projetos {
   flex-direction: column;
   align-items: center;
@@ -247,17 +259,19 @@ main #main__content #main__box #main__inner_box p {
   font-weight: lighter;
 }
 #section__projetos #section__projetos_banners img {
-  width: 70%;
-  height: 70%;
+  width: 80%;
   border-radius: 16px;
   margin-bottom: 18px;
 }
 #section__projetos #section__projetos_banners span {
   background-color: #3ab509;
   text-align: center;
-  width: 440px;
+  width: 70%;
+  max-width: 50%;
   height: 48px;
-  font-size: 21px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 50%;
   border-radius: 6px;
   margin-bottom: 36px;
 }
@@ -267,6 +281,39 @@ main #main__content #main__box #main__inner_box p {
   line-height: 36px;
 }
 
+@media (max-width: 1205px) {
+  #section__projetos {
+    margin-top: 10em;
+  }
+  #section__projetos #section__projetos_banners {
+    position: relative;
+    top: 50%;
+    height: auto;
+    max-width: 80%;
+  }
+  #section__projetos #section__projetos_banners h1 {
+    text-align: center;
+    max-width: 80%;
+  }
+  #section__projetos #section__projetos_banners h2 {
+    text-align: center;
+    max-width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  #section__projetos #section__projetos_banners h1 {
+    font-size: 2rem;
+  }
+  #section__projetos #section__projetos_banners h2 {
+    font-size: 2rem;
+  }
+  #section__projetos #section__projetos_banners span a {
+    line-height: 1em;
+    position: relative;
+    top: 0.5em;
+    font-weight: bold;
+  }
+}
 #section__links_externos {
   height: 284px;
   align-items: center;
@@ -282,6 +329,11 @@ main #main__content #main__box #main__inner_box p {
   gap: 32px;
 }
 
+@media (max-width: 1205px) {
+  #section__links_externos h1 {
+    font-size: 3rem;
+  }
+}
 footer {
   height: 80px;
   background-color: #0673FA;
