@@ -9,3 +9,17 @@ $fonte-titulo: 'modak-regular';
 $fonte-subtitulo: 'worksans-italic';
 $fonte-subtitulo-normal: 'worksans-regular';
 $fonte-texto-corrido: 'deutschlander-regular';
+
+@mixin centralizaXY {
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin semMargem {
+    margin: 0;
+}
+
+@mixin autoHeight {
+    height: auto;
+    max-width: 80%;
+}

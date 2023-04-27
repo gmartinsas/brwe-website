@@ -11,13 +11,20 @@ main {
         img {
             height: 564px;
             width: 580px;
-            margin: 115px 0 0 80px;
+            margin-left: 80px;
         }
 
         #main__box {
             height: 240px;
             width: 40%;
-            border: 2px solid #000;
+            border: {
+                top: 2px;
+                bottom: 2px;
+                left: 2px;
+                right: 0px;
+            }
+            border-color: #000;
+            border-style: solid;
             border-radius: 175px 0 0 175px;
             
             #main__inner_box {
@@ -28,15 +35,15 @@ main {
                 left: 15%;
 
                 h1 {
+                    @include semMargem;
                     font-weight: lighter;
-                    font-size: 2em;
+                    font-size: 2rem;
                     letter-spacing: -1px;
-                    margin: 0px;
                 }
     
                 h2 {
-                    font-size: 3em;
-                    margin: 0px;
+                    @include semMargem;
+                    font-size: 3rem;
 
                     & strong {
                         color: $cor-paleta-azul;
@@ -60,26 +67,25 @@ main {
             flex-direction: column;
     
             img {
-                justify-content: center;
+                @include autoHeight;
                 margin: 3em 0 0 0;
-                height: auto;
-                max-width: 80%;
+                justify-content: center;
             }
     
             #main__box {
                 border-style: none;
                 border-radius: 0;
-                margin-top: 6rem;
+                margin-top: 6em;
                 width: 100%;
                 height: auto;
+                max-height: 500px;
                 justify-content: center;
                 background-color: $cor-paleta-amarelo;
 
                 #main__inner_box {
+                    @include autoHeight;
                     position: initial;
                     align-items: center;
-                    width: 80%;
-                    height: auto;
                     padding: 3em 0 3em 0;
 
                     h1 {
@@ -102,6 +108,33 @@ main {
     article {
         img {
             display: none;
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    main {     
+        #main__content {
+            #main__box {
+                #main__inner_box {
+                    h1 {
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+    
+                    h2 {
+                        font-size: 2.5rem;
+                        text-align: center;
+                    }
+    
+                    p {
+                        font-size: 2.5rem;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }

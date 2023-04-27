@@ -4,22 +4,22 @@
     height: 120px;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #000;
-}
+    border-bottom: 2px solid #000;
 
-#logo__principal {
-    height: 77px;
-}
+    #logo__principal {
+        height: 80px;
+    }
 
-.item__menu {
-    text-decoration: none;
-    color: $cor-texto;
-    font-size: 4em;
-    text-transform: uppercase;
-    margin-left: 1rem;
-
-    &:hover {
-        color: $cor-paleta-azul;
+    .item__menu {
+        color: $cor-texto;
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 1rem;
+    
+        &:hover {
+            color: $cor-paleta-azul;
+        }
     }
 }
 

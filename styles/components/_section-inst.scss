@@ -1,9 +1,8 @@
 @import '../abstract/variaveis';
 
 #section__institucional {
+    @include centralizaXY;
     height: 655px;
-    justify-content: center;
-    align-items: center;
     gap: 95px;
 
     #section__institucional_texto {
@@ -14,14 +13,14 @@
         left: 30px;
         
         h1 {
-            font-size: 50px;
+            @include semMargem;
+            font-size: 3.125rem;
             font-weight: 100;
-            margin: 0px;
         }
     
         p {
-            font-size: 42px;
-            margin: 0px;
+            @include semMargem;
+            font-size: 2.625rem;
         }
         
         & #valores {

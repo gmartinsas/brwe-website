@@ -1,9 +1,8 @@
 @import '../abstract/variaveis';
 
 #section__links_externos {
+    @include centralizaXY;
     height: 284px;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 
     h1 {
