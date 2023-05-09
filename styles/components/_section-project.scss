@@ -83,6 +83,11 @@
                 max-width: 80%;
             }
         }
+
+        #section__projetos_tags {
+            @include autoHeight;
+            max-width: 80%;
+        }
     }
 }
 
@@ -104,6 +109,16 @@
                         top: 0.5em;
                         font-weight: bold;
                     }
+                }
+            }
+
+            #section__projetos_tags {
+                @include autoHeight;
+                margin: 1em 0 2em 0;
+
+                img {
+                    height: auto;
+                    width: 4em;
                 }
             }
     }
