@@ -1,17 +1,10 @@
 @import '../abstract/variaveis';
 
 #section__institucional {
-    @include centralizaXY;
-    height: 655px;
-    gap: 95px;
+    margin: 3em 2em 3em 2em;
+    align-items: center;
 
     #section__institucional_texto {
-        width: 560px;
-        height: 510px;
-        position: relative;
-        top: 30px;
-        left: 30px;
-        
         h1 {
             @include semMargem;
             font-size: 3.125rem;
@@ -27,11 +20,6 @@
             margin-top: 12px;
         }
     }
-
-    img {
-        width: 600px;
-        height: 511px;
-    }
 }
 
 @media (max-width: 1205px) {
@@ -39,16 +27,37 @@
             flex-direction: column;
 
             #section__institucional_texto {
-                position: initial;
-                height: auto;
-                max-width: 80%;
+                @include autoHeight;
             }
 
             img {
-                position: relative;
-                bottom: 5em;
+                width: 60%;
                 height: auto;
-                max-width: 80%;
             }
         }
+}
+
+@media (max-width: 640px) {
+    #section__institucional {
+        img {
+            width: 90%;
+        }
+
+        #section__institucional_texto {
+            margin-bottom: 1em;
+            
+            #valores {
+                margin-top: 1em;
+            }
+        }
+
+        #section__institucional_texto > h1 {
+            font-size: 2.5rem;
+        }
+
+        #section__institucional_texto > p {
+            font-size: 2.25rem;
+            text-align: justify;
+        }
+    }
 }

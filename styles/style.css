@@ -190,17 +190,8 @@ main #main__content #main__box #main__inner_box p {
   }
 }
 #section__institucional {
+  margin: 3em 2em 3em 2em;
   align-items: center;
-  justify-content: center;
-  height: 655px;
-  gap: 95px;
-}
-#section__institucional #section__institucional_texto {
-  width: 560px;
-  height: 510px;
-  position: relative;
-  top: 30px;
-  left: 30px;
 }
 #section__institucional #section__institucional_texto h1 {
   margin: 0;
@@ -214,25 +205,36 @@ main #main__content #main__box #main__inner_box p {
 #section__institucional #section__institucional_texto #valores {
   margin-top: 12px;
 }
-#section__institucional img {
-  width: 600px;
-  height: 511px;
-}
 
 @media (max-width: 1205px) {
   #section__institucional {
     flex-direction: column;
   }
   #section__institucional #section__institucional_texto {
-    position: initial;
     height: auto;
     max-width: 80%;
   }
   #section__institucional img {
-    position: relative;
-    bottom: 5em;
+    width: 60%;
     height: auto;
-    max-width: 80%;
+  }
+}
+@media (max-width: 640px) {
+  #section__institucional img {
+    width: 90%;
+  }
+  #section__institucional #section__institucional_texto {
+    margin-bottom: 1em;
+  }
+  #section__institucional #section__institucional_texto #valores {
+    margin-top: 1em;
+  }
+  #section__institucional #section__institucional_texto > h1 {
+    font-size: 2.5rem;
+  }
+  #section__institucional #section__institucional_texto > p {
+    font-size: 2.25rem;
+    text-align: justify;
   }
 }
 #section__projetos {
@@ -240,99 +242,97 @@ main #main__content #main__box #main__inner_box p {
   align-items: center;
 }
 #section__projetos #section__projetos_tags {
-  margin-bottom: 64px;
+  margin-bottom: 3em;
 }
 #section__projetos #section__projetos_tags img {
+  margin: 0 -1em 0 -1em;
   width: 150px;
   height: 150px;
 }
 #section__projetos #section__projetos_banners {
-  width: 955px;
-  height: 676px;
+  height: auto;
+  max-width: 80%;
   flex-direction: column;
   align-items: center;
-  border: 2px #3ab509 solid;
-  border-radius: 24px;
+  padding: 3em 0 3em 0;
+  border: 3px #3ab509 solid;
+  border-radius: 2em;
 }
 #section__projetos #section__projetos_banners h1 {
-  font-size: 64px;
-  margin-bottom: 0;
+  margin: 0;
+  font-size: 4rem;
   color: #3ab509;
 }
 #section__projetos #section__projetos_banners h2 {
-  font-size: 42px;
-  margin: 8px 0 40px 0;
+  margin: 0;
+  font-size: 2.5rem;
   letter-spacing: -1px;
   font-weight: lighter;
 }
 #section__projetos #section__projetos_banners img {
   width: 80%;
-  border-radius: 16px;
-  margin-bottom: 18px;
+  border-radius: 2em;
+  margin: 3em 0 2em 0;
 }
 #section__projetos #section__projetos_banners span {
+  align-items: center;
+  justify-content: center;
   background-color: #3ab509;
   text-align: center;
-  width: 70%;
-  max-width: 50%;
-  height: 48px;
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 50%;
-  border-radius: 6px;
-  margin-bottom: 36px;
+  width: 40%;
+  height: 3em;
+  border-radius: 0.5rem;
 }
 #section__projetos #section__projetos_banners span a {
   text-decoration: none;
-  color: #FFF;
-  line-height: 36px;
+  color: white;
+  font-weight: bolder;
 }
 
 @media (max-width: 1205px) {
-  #section__projetos {
-    margin-top: 10em;
-  }
-  #section__projetos #section__projetos_banners {
-    position: relative;
-    top: 50%;
-    height: auto;
-    max-width: 80%;
-  }
-  #section__projetos #section__projetos_banners h1 {
-    text-align: center;
-    max-width: 80%;
-  }
-  #section__projetos #section__projetos_banners h2 {
+  #section__projetos #section__projetos_banners > h1, #section__projetos h2 {
     text-align: center;
     max-width: 80%;
   }
   #section__projetos #section__projetos_tags {
     height: auto;
     max-width: 80%;
+    justify-content: center;
     max-width: 80%;
   }
 }
-@media (max-width: 480px) {
-  #section__projetos #section__projetos_banners h1 {
-    font-size: 2rem;
+@media (max-width: 640px) {
+  #section__projetos #section__projetos_tags img {
+    width: 30%;
   }
-  #section__projetos #section__projetos_banners h2 {
-    font-size: 2rem;
-  }
-  #section__projetos #section__projetos_banners span a {
-    line-height: 1em;
-    position: relative;
-    top: 0.5em;
-    font-weight: bold;
-  }
-  #section__projetos #section__projetos_tags {
+}
+@media (max-width: 600px) {
+  #section__projetos #section__projetos_banners img {
     height: auto;
     max-width: 80%;
     margin: 1em 0 2em 0;
+    border-radius: 1em;
   }
-  #section__projetos #section__projetos_tags img {
-    height: auto;
-    width: 4em;
+  #section__projetos #section__projetos_banners h1 {
+    font-size: 3rem;
+  }
+  #section__projetos #section__projetos_banners h2 {
+    font-size: 1.5rem;
+  }
+  #section__projetos #section__projetos_banners span {
+    padding: 0.5em;
+    width: 60%;
+    height: 3em;
+    border-radius: 0.5rem;
+  }
+  #section__projetos #section__projetos_banners span a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  #section__projetos #section__projetos_banners #section__projetos_tags {
+    margin: 0 0 3em 0;
   }
 }
 #section__links_externos {
