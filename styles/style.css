@@ -242,7 +242,7 @@ main #main__content #main__box #main__inner_box p {
   align-items: center;
 }
 #section__projetos #section__projetos_tags {
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 #section__projetos #section__projetos_tags img {
   margin: 0 -1em 0 -1em;
@@ -282,6 +282,8 @@ main #main__content #main__box #main__inner_box p {
   width: 40%;
   height: 3em;
   border-radius: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 #section__projetos #section__projetos_banners span a {
   text-decoration: none;
@@ -333,6 +335,20 @@ main #main__content #main__box #main__inner_box p {
   }
   #section__projetos #section__projetos_banners #section__projetos_tags {
     margin: 0 0 3em 0;
+  }
+}
+@media (max-width: 500px) {
+  span {
+    padding: 0.5em;
+    width: 60%;
+    height: 3em;
+    border-radius: 0.5rem;
+  }
+  span a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5rem;
   }
 }
 #section__links_externos {
