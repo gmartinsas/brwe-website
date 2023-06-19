@@ -13,17 +13,33 @@
 
     #section__links {
         gap: 32px;
+
+        transition: .5s;
+
+        #linkedin:hover {
+            filter: invert(32%) sepia(47%) saturate(6908%) hue-rotate(182deg) brightness(92%) contrast(106%);
+        }
+
+        #github:hover {
+            filter: invert(4%) sepia(4%) saturate(5760%) hue-rotate(178deg) brightness(97%) contrast(83%);
+        }
+
+        #linktree:hover {
+            filter: invert(81%) sepia(17%) saturate(1528%) hue-rotate(72deg) brightness(86%) contrast(116%);
+        }
+
+        #behance:hover {
+            filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(304deg) brightness(97%) contrast(103%);
+        }
     }
 
 }
 
 @media (max-width: 1205px) {
     #section__links_externos {
-        
+
         h1 {
             font-size: 3rem;
         }
     }
-    
-    
 }
