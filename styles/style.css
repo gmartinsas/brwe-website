@@ -309,29 +309,41 @@ main #main__content #main__box #main__inner_box p {
   }
 }
 @media (max-width: 600px) {
+  #section__projetos #section__projetos_banners {
+    padding: 0 0 4em 0;
+    border: 0;
+    background-color: #e5feef;
+    box-shadow: 1px 1px 10px #232323;
+    align-items: start;
+  }
   #section__projetos #section__projetos_banners img {
-    height: auto;
-    max-width: 80%;
-    margin: 1em 0 2em 0;
-    border-radius: 1em;
+    order: -1;
+    margin: 0;
+    width: 100%;
+    border-radius: 1.9em 1.9em 0 0;
   }
   #section__projetos #section__projetos_banners h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 0.5em 0 0 0.3em;
+    text-align: left;
   }
   #section__projetos #section__projetos_banners h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin: 0 0 1em 0.5em;
+    text-align: left;
   }
   #section__projetos #section__projetos_banners span {
     padding: 0.5em;
-    width: 60%;
-    height: 3em;
+    width: 80%;
+    height: 1em;
     border-radius: 0.5rem;
+    margin-left: 0.5em;
   }
   #section__projetos #section__projetos_banners span a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #section__projetos #section__projetos_banners #section__projetos_tags {
     margin: 0 0 3em 0;
