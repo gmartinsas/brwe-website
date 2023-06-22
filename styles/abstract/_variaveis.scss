@@ -24,3 +24,7 @@ $fonte-texto-corrido: 'deutschlander-regular';
     height: auto;
     max-width: 80%;
 }
+
+@mixin divisorPadrao {
+    margin-bottom: 2em;
+}

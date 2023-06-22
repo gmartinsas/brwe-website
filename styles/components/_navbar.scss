@@ -25,7 +25,7 @@
 
 // Tablets
 @media (min-width: 601px) and (max-width: 840px) {
-    body {
+    nav {
         li {
             display: none;
         }
@@ -41,7 +41,7 @@
     body {
         overflow-x: none;
 
-        .navbar {
+        nav {
             height: 2fr;
     
             .lista__menu {

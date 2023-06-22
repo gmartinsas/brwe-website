@@ -89,14 +89,11 @@
 
 @media (max-width: 600px) {
     #section__projetos {
-        
-        
         #section__projetos_banners {
-            padding: 0 0 4em 0;
+            padding: 0 0 3em 0;
             border: 0;
             background-color: $cor-bg-card;
-            box-shadow: 1px 1px 10px #232323;
-            align-items: start;
+            box-shadow: 1px 1px 10px #bdbdbd;
             
                 img {
                     order: -1;
@@ -107,14 +104,12 @@
 
                 h1 {
                     font-size: 2rem;
-                    margin: .5em 0 0 .3em;
-                    text-align: left;
+                    margin: .5em 0 0 0;
                 }
                 
                 h2 {
                     font-size: 1.25rem;
-                    margin: 0 0 1em .5em;
-                    text-align: left;
+                    margin: 0 0 1.5em 0;
                 }
                 
                 span {
@@ -122,7 +117,7 @@
                     width: 80%;
                     height: 1em;
                     border-radius: 0.5rem;
-                    margin-left: .5em;
+                    //margin-left: .5em;
 
                     a {
                         text-decoration: none;

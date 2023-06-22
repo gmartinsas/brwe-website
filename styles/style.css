@@ -75,10 +75,10 @@ body {
 }
 
 @media (min-width: 601px) and (max-width: 840px) {
-  body li {
+  nav li {
     display: none;
   }
-  body li:last-child {
+  nav li:last-child {
     display: flex;
   }
 }
@@ -86,10 +86,10 @@ body {
   body {
     overflow-x: none;
   }
-  body .navbar {
+  body nav {
     height: 2fr;
   }
-  body .navbar .lista__menu {
+  body nav .lista__menu {
     display: none;
   }
 }
@@ -310,11 +310,10 @@ main #main__content #main__box #main__inner_box p {
 }
 @media (max-width: 600px) {
   #section__projetos #section__projetos_banners {
-    padding: 0 0 4em 0;
+    padding: 0 0 3em 0;
     border: 0;
     background-color: #e5feef;
-    box-shadow: 1px 1px 10px #232323;
-    align-items: start;
+    box-shadow: 1px 1px 10px #bdbdbd;
   }
   #section__projetos #section__projetos_banners img {
     order: -1;
@@ -324,20 +323,17 @@ main #main__content #main__box #main__inner_box p {
   }
   #section__projetos #section__projetos_banners h1 {
     font-size: 2rem;
-    margin: 0.5em 0 0 0.3em;
-    text-align: left;
+    margin: 0.5em 0 0 0;
   }
   #section__projetos #section__projetos_banners h2 {
     font-size: 1.25rem;
-    margin: 0 0 1em 0.5em;
-    text-align: left;
+    margin: 0 0 1.5em 0;
   }
   #section__projetos #section__projetos_banners span {
     padding: 0.5em;
     width: 80%;
     height: 1em;
     border-radius: 0.5rem;
-    margin-left: 0.5em;
   }
   #section__projetos #section__projetos_banners span a {
     text-decoration: none;
