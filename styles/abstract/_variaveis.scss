@@ -9,7 +9,7 @@ $cor-paleta-amarelo: #f3a712;
 $fonte-titulo: 'modak-regular';
 $fonte-subtitulo: 'worksans-italic';
 $fonte-subtitulo-normal: 'worksans-regular';
-$fonte-texto-corrido: 'deutschlander-regular';
+$fonte-texto-corrido: 'Barlow Condensed';
 
 @mixin centralizaXY {
     align-items: center;
@@ -26,5 +26,5 @@ $fonte-texto-corrido: 'deutschlander-regular';
 }
 
 @mixin divisorPadrao {
-    margin-bottom: 2em;
+    margin-bottom: 6em !important;
 }

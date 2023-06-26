@@ -3,12 +3,13 @@
 footer {
     @include centralizaXY;
     background-color: $cor-paleta-azul;
-    height: 80px;
     
     p {
         color: white;
-        font-size: 3.5rem;
+        font-size: 2rem;
         margin: 0px;
+        padding: .5em;
+        font-weight: bold;
     }
 }
 

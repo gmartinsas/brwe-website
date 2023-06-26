@@ -1,12 +1,7 @@
 @charset "UTF-8";
 /* Variáveis e Métodos */
 /* Webfonts */
-@font-face {
-  font-family: "deutschlander-regular";
-  src: url("../src/fonts/deutschlander/deutschlander-webfont.woff2") format("woff2"), url("../src/fonts/deutschlander/deutschlander-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap");
 @font-face {
   font-family: "modak-regular";
   src: url("../src/fonts/modak/modak-regular-webfont.woff2") format("woff2"), url("../src/fonts/modak/modak-regular-webfont.woff") format("woff");
@@ -44,33 +39,36 @@
 }
 
 .texto-corrido {
-  font-family: "deutschlander-regular";
+  font-family: "Barlow Condensed";
 }
 
 /* HTML */
 body {
   background: #F9FEE5;
-  height: 100vh;
   overflow-x: hidden;
 }
 
-.navbar {
-  height: 120px;
-  justify-content: space-around;
+nav {
+  margin-bottom: 6em !important;
+  height: 8em;
+  justify-content: space-evenly;
   align-items: center;
-  border-bottom: 2px solid #000;
+  box-shadow: 0 2px 10px #bdbdbd;
 }
-.navbar #logo__principal {
-  height: 80px;
+nav #logo__principal {
+  height: 5em;
 }
-.navbar .item__menu {
+nav .lista__menu {
+  gap: 1.5em;
+}
+nav .lista__menu .item__menu {
   color: #232323;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 1rem;
+  font-weight: bold;
 }
-.navbar .item__menu:hover {
+nav .lista__menu .item__menu:hover {
   color: #0673FA;
 }
 
@@ -93,17 +91,17 @@ body {
     display: none;
   }
 }
-main #main__content {
-  margin: 6em 0 6em 0;
+main {
+  margin-bottom: 6em !important;
   justify-content: space-between;
   align-items: center;
 }
-main #main__content img {
+main img {
   height: 564px;
   width: auto;
   margin-left: 5em;
 }
-main #main__content #main__box {
+main #main__box {
   width: 40%;
   border-top: 2px;
   border-bottom: 2px;
@@ -113,41 +111,41 @@ main #main__content #main__box {
   border-style: solid;
   border-radius: 175px 0 0 175px;
 }
-main #main__content #main__box #main__inner_box {
+main #main__box #main__inner_box {
   flex-direction: column;
   text-align: end;
   margin: 2em 0 2em 0;
   position: relative;
   left: 15%;
 }
-main #main__content #main__box #main__inner_box h1 {
+main #main__box #main__inner_box h1 {
   margin: 0;
   font-weight: lighter;
   font-size: 2rem;
   letter-spacing: -1px;
 }
-main #main__content #main__box #main__inner_box h2 {
+main #main__box #main__inner_box h2 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
-main #main__content #main__box #main__inner_box h2 strong {
+main #main__box #main__inner_box h2 strong {
   color: #0673FA;
 }
-main #main__content #main__box #main__inner_box p {
+main #main__box #main__inner_box p {
   display: none;
 }
 
 @media (max-width: 1205px) {
-  main #main__content {
+  main {
     flex-direction: column;
     margin-bottom: 6em;
   }
-  main #main__content img {
+  main img {
     height: auto;
     max-width: 80%;
     margin: 0;
   }
-  main #main__content #main__box {
+  main #main__box {
     border-style: none;
     border-radius: 0;
     margin-top: 6em;
@@ -155,19 +153,19 @@ main #main__content #main__box #main__inner_box p {
     justify-content: center;
     background-color: #f3a712;
   }
-  main #main__content #main__box #main__inner_box {
+  main #main__box #main__inner_box {
     height: auto;
     max-width: 80%;
     margin: 0;
     position: initial;
     padding: 3em 0 3em 0;
   }
-  main #main__content #main__box #main__inner_box p {
+  main #main__box #main__inner_box p {
     font-size: 3rem;
     display: block;
     margin-bottom: 0;
   }
-  main #main__content #main__box #main__inner_box > h1, main #main__content #main__box h2, main #main__content #main__box p {
+  main #main__box #main__inner_box > h1, main #main__box h2, main #main__box p {
     text-align: center;
   }
   article img {
@@ -175,17 +173,17 @@ main #main__content #main__box #main__inner_box p {
   }
 }
 @media (max-width: 640px) {
-  main #main__content #main__box #main__inner_box h1 {
+  main #main__box #main__inner_box h1 {
     font-size: 1.5rem;
   }
-  main #main__content #main__box #main__inner_box h2 {
+  main #main__box #main__inner_box h2 {
     font-size: 2.5rem;
   }
-  main #main__content #main__box #main__inner_box p {
+  main #main__box #main__inner_box p {
     font-size: 2.5rem;
     display: block;
   }
-  main #main__content #main__box #main__inner_box > h1, main #main__content #main__box h2, main #main__content #main__box p {
+  main #main__box #main__inner_box > h1, main #main__box h2, main #main__box p {
     text-align: center;
   }
 }
@@ -200,7 +198,7 @@ main #main__content #main__box #main__inner_box p {
 }
 #section__institucional #section__institucional_texto p {
   margin: 0;
-  font-size: 2.625rem;
+  font-size: 2.25rem;
 }
 #section__institucional #section__institucional_texto #valores {
   margin-top: 12px;
@@ -396,12 +394,13 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #0673FA;
-  height: 80px;
 }
 footer p {
   color: white;
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin: 0px;
+  padding: 0.5em;
+  font-weight: bold;
 }
 
 /* HTML */
