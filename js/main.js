@@ -1,3 +1,15 @@
+const botaoNavbar = document.getElementById('hamburger-menu');
+const linksNavbar = document.getElementById('navbar');
+
+botaoNavbar.addEventListener('click', () => {
+    if (linksNavbar.classList.contains("toggle")) {
+        linksNavbar.classList.remove("toggle");
+    } else {
+        linksNavbar.classList.add("toggle");
+    }
+});
+
+
 `
 <div id="section__projetos_banners" class="pai">
 

@@ -50,8 +50,13 @@
     font-family: $fonte-texto-corrido;
 }
 
+.toggle {
+    display: none !important;
+    transition: 500ms;
+}
+
 /* HTML */
 body {
     background: $cor-bg-amarelo;
-    overflow-x: hidden;
+    overflow-x: none;
 }

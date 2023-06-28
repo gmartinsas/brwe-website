@@ -5,23 +5,20 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="./styles/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <link rel="stylesheet" href="./reset.css">
             <title>BRWE Design Studio</title>
         </head>
         <body>
             <nav class="pai">
-                <img id="logo__principal" src="src/imgs/logo-standart.png" alt="Logo da BRWE.">
-                <ul class="pai lista__menu">
-                    <li><a class="texto-corrido item__menu" href="#">Carreira</a></li>
-                    <li><a class="texto-corrido item__menu" href="#">Web Design</a></li>
-                    <li><a class="texto-corrido item__menu" href="#">UI/UX Design</a></li>
-                    <li><a class="texto-corrido item__menu" href="#section__links_externos">Contato</a></li>
+                <img class="logo" src="src/imgs/logo-standart.png" alt="Logo com o acrônimo B, R, W, E.">
+                <ul id="navbar" class="pai lista__menu toggle">
+                    <li><a class="item__menu texto-corrido" href="#">Carreira</a></li>
+                    <li><a class="item__menu texto-corrido" href="#">Web Design</a></li>
+                    <li><a class="item__menu texto-corrido" href="#">UI/UX Design</a></li>
+                    <li><a class="item__menu texto-corrido" href="#section__links_externos">Contato</a></li>
                 </ul>
-                <!-- 
-                <div class="menu btn5" data-menu="5">
-                    <div class="icon"></div>
-                </div>
-                 -->
+                <img id="hamburger-menu"class="menu" src="./src/icons/bars-solid.svg">
             </nav>
             <main class="pai">
                     <img src="./src/imgs/main_banner.svg" alt="Grid com banners retângulos com as palavras 'Design',
@@ -59,13 +56,10 @@
             </section>
             <section id="section__projetos" class="pai">
                 <div id="section__projetos_tags" class="pai">
-                    <img src="./src/imgs/tag_dg.svg" alt="Estrela verde de 7 pontas arredondadas com 'Design Gráfico' dentro">
-                    <img src="./src/imgs/tag_ui.svg" alt="Triângulo roxo de pontas arredondadas escrito 'UI UX' dentro"> 
-                    <img src="./src/imgs/tag_web.svg" alt="Estrela vermelha de 7 pontas arredondadas com 'Web Design' dentro">
+                    <img id="dg_img" src="./src/icons/tag_dg.svg" alt="Estrela verde de 7 pontas arredondadas com 'Design Gráfico' dentro">
+                    <img src="./src/icons/tag_ui.svg" alt="Triângulo roxo de pontas arredondadas escrito 'UI UX' dentro"> 
+                    <img src="./src/icons/tag_web.svg" alt="Estrela vermelha de 7 pontas arredondadas com 'Web Design' dentro">
                 </div> 
-                
-                <!-- Painel do clique às tags de áreas de estudo -->
-
                 <div id="section__projetos_banners" class="pai">
                     <h1 class="titulo">Projeto em Destaque</h1>
                     <h2 class="subtitulo">Identidade Visual - Ateliê Dom de Criar</h2>
@@ -80,13 +74,13 @@
                 <h1 class="titulo">Links Externos</h1>
                 <div id="section__links" class="pai">
                     <a href="https://br.linkedin.com/in/gabrielmartinsas" target="_blank" rel="noopener noreferrer"><img 
-                    id="linkedin" src="./src/imgs/logo-linkedin.svg" alt="Logo da rede social Linkedin"></a>
+                    id="linkedin" src="./src/icons/logo-linkedin.svg" alt="Logo da rede social Linkedin"></a>
                     <a href="https://github.com/gmartinsas" target="_blank" rel="noopener noreferrer"><img 
-                    id="github" src="./src/imgs/logo-github.svg" alt="Logo da plataforma GitHub"></a>
+                    id="github" src="./src/icons/logo-github.svg" alt="Logo da plataforma GitHub"></a>
                     <a href="https://linktr.ee/gmartinsas" target="_blank" rel="noopener noreferrer"><img 
-                    id="linktree" src="./src/imgs/logo-linktree.svg" alt="Logo da rede social Linktree"></a>
+                    id="linktree" src="./src/icons/logo-linktree.svg" alt="Logo da rede social Linktree"></a>
                     <a href="https://www.behance.net/ariel_dsgn" target="_blank" rel="noopener noreferrer"><img 
-                    id="behance" src="./src/imgs/logo-behance.svg" alt="Logo da plataforma Behance"></a> 
+                    id="behance" src="./src/icons/logo-behance.svg" alt="Logo da plataforma Behance"></a> 
                 </div>
             </section>
             <footer class="pai texto-corrido">

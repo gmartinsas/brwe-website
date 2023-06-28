@@ -42,24 +42,30 @@
   font-family: "Barlow Condensed";
 }
 
+.toggle {
+  display: none !important;
+  transition: 500ms;
+}
+
 /* HTML */
 body {
   background: #F9FEE5;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 nav {
   margin-bottom: 6em !important;
-  height: 8em;
-  justify-content: space-evenly;
-  align-items: center;
   box-shadow: 0 2px 10px #bdbdbd;
+  justify-content: space-around;
+  align-items: center;
 }
-nav #logo__principal {
+nav .logo {
   height: 5em;
 }
 nav .lista__menu {
+  align-items: center;
   gap: 1.5em;
+  padding: 2em;
 }
 nav .lista__menu .item__menu {
   color: #232323;
@@ -70,25 +76,59 @@ nav .lista__menu .item__menu {
 }
 nav .lista__menu .item__menu:hover {
   color: #0673FA;
+  border-bottom: 3px solid #232323;
+}
+nav .menu {
+  display: none;
+  cursor: pointer;
 }
 
-@media (min-width: 601px) and (max-width: 840px) {
-  nav li {
-    display: none;
+@media (max-width: 1200px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0 !important;
   }
-  nav li:last-child {
-    display: flex;
+  nav .logo {
+    height: 5em;
+  }
+  nav .lista__menu {
+    padding: 1.5em 0 1em 0;
+    flex-wrap: wrap;
+  }
+  nav .lista__menu .item__menu {
+    font-size: 1.85rem;
+  }
+  nav .lista__menu .item__menu:hover {
+    border: 0;
+  }
+  nav .menu {
+    display: none;
   }
 }
 @media (max-width: 600px) {
-  body {
-    overflow-x: none;
+  nav {
+    flex-direction: row;
+    padding: 2em 2em 0 2em;
+    flex-wrap: wrap;
   }
-  body nav {
-    height: 2fr;
+  nav .lista__menu {
+    order: 2;
+    display: inline-block;
+    padding: 1em 2em;
+    margin-top: 2em;
+    width: 100%;
+    background-color: #232323;
+    transition: 500ms;
   }
-  body nav .lista__menu {
-    display: none;
+  nav .lista__menu .item__menu {
+    color: white;
+    display: inline-block;
+    height: 1.25em;
+  }
+  nav .menu {
+    display: block;
+    width: 2.5em;
   }
 }
 main {
