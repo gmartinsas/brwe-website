@@ -1,6 +1,7 @@
 const botaoNavbar = document.getElementById('hamburger-menu');
 const linksNavbar = document.getElementById('navbar');
 
+/* Função para ativar o Menu Hamburger (Mobile) */
 botaoNavbar.addEventListener('click', () => {
     if (linksNavbar.classList.contains("toggle")) {
         linksNavbar.classList.remove("toggle");

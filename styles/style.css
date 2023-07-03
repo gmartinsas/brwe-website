@@ -50,7 +50,6 @@
 /* HTML */
 body {
   background: #F9FEE5;
-  scroll-behavior: smooth;
   overflow-x: none;
 }
 
@@ -143,7 +142,6 @@ main img {
   margin-left: 5em;
 }
 main #main__box {
-  width: 40%;
   border-top: 2px;
   border-bottom: 2px;
   border-left: 2px;
@@ -151,13 +149,12 @@ main #main__box {
   border-color: #000;
   border-style: solid;
   border-radius: 175px 0 0 175px;
+  padding: 2em 2em 2em 3em;
 }
 main #main__box #main__inner_box {
+  justify-content: center;
   flex-direction: column;
   text-align: end;
-  margin: 2em 0 2em 0;
-  position: relative;
-  left: 15%;
 }
 main #main__box #main__inner_box h1 {
   margin: 0;
@@ -215,10 +212,10 @@ main #main__box #main__inner_box p {
 }
 @media (max-width: 640px) {
   main #main__box #main__inner_box h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main #main__box #main__inner_box h2 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
   main #main__box #main__inner_box p {
     font-size: 2.5rem;
@@ -272,7 +269,7 @@ main #main__box #main__inner_box p {
     font-size: 2.5rem;
   }
   #section__institucional #section__institucional_texto > p {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     text-align: justify;
   }
 }
@@ -304,7 +301,7 @@ main #main__box #main__inner_box p {
 }
 #section__projetos #section__projetos_banners h2 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
   letter-spacing: -1px;
   font-weight: lighter;
 }
@@ -365,7 +362,7 @@ main #main__box #main__inner_box p {
     margin: 0.5em 0 0 0;
   }
   #section__projetos #section__projetos_banners h2 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     margin: 0 0 1.5em 0;
   }
   #section__projetos #section__projetos_banners span {

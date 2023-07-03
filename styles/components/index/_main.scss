@@ -12,7 +12,6 @@ main {
     }
 
     #main__box {
-        width: 40%;
         border: {
             top: 2px;
             bottom: 2px;
@@ -22,13 +21,12 @@ main {
         border-color: #000;
         border-style: solid;
         border-radius: 175px 0 0 175px;
+        padding: 2em 2em 2em 3em;
         
         #main__inner_box {
+            justify-content: center;
             flex-direction: column;
             text-align: end;
-            margin: 2em 0 2em 0;
-            position: relative;
-            left: 15%;
 
             h1 {
                 @include semMargem;
@@ -77,7 +75,7 @@ main {
                 @include semMargem;
                 position: initial;
                 padding: 3em 0 3em 0;
-
+                
                 p {
                     font-size: 3rem;
                     display: block;
@@ -103,11 +101,11 @@ main {
         #main__box {
             #main__inner_box {
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                 }
     
                 h2 {
-                    font-size: 2.5rem;
+                    font-size: 1.75rem;
                 }
 
                 p {
