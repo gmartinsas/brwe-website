@@ -1,10 +1,12 @@
 @import '../../abstract/variaveis';
 
 #section__institucional {
-    margin: 3em 2em 3em 2em;
+    @include divisorPadrao;
     align-items: center;
 
     #section__institucional_texto {
+        padding: 2rem;
+
         h1 {
             @include semMargem;
             font-size: 3.125rem;
@@ -39,6 +41,8 @@
 
 @media (max-width: 640px) {
     #section__institucional {
+        margin-bottom: 0 !important;
+
         img {
             width: 90%;
         }
@@ -57,7 +61,6 @@
 
         #section__institucional_texto > p {
             font-size: 1.75rem;
-            text-align: justify;
         }
     }
 }

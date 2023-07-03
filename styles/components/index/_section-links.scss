@@ -2,8 +2,8 @@
 
 #section__links_externos {
     @include centralizaXY;
-    height: 284px;
     flex-direction: column;
+    padding: 4rem;
 
     h1 {
         font-size: 57px;
@@ -38,7 +38,7 @@
     #section__links_externos {
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.25rem;
         }
     }
 }

@@ -54,8 +54,9 @@ main {
 // Dispositivos Móveis
 @media (max-width: 1205px) {  
     main {
+        @include divisorPadrao;
         flex-direction: column;
-        margin-bottom: 6em;
+        gap: 3rem;
     
         img {
             @include autoHeight;
@@ -65,15 +66,12 @@ main {
         #main__box {
             border-style: none;
             border-radius: 0;
-            margin-top: 6em;
-            width: 100%;
+            padding: 1.5rem;
             justify-content: center;
             background-color: $cor-paleta-amarelo;
 
             #main__inner_box {
-                @include autoHeight;
                 @include semMargem;
-                position: initial;
                 padding: 3em 0 3em 0;
                 
                 p {
@@ -101,7 +99,7 @@ main {
         #main__box {
             #main__inner_box {
                 h1 {
-                    font-size: 2rem;
+                    font-size: 1.9rem;
                 }
     
                 h2 {
@@ -109,7 +107,7 @@ main {
                 }
 
                 p {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     display: block;
                 }
             }
