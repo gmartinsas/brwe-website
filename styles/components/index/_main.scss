@@ -1,7 +1,8 @@
 @import '../../abstract/variaveis';
 
 main {
-    @include divisorPadrao;
+    // Candidato pra ser um include
+    padding-top: 6em;
     justify-content: space-between;
     align-items: center;
 
@@ -54,7 +55,6 @@ main {
 // Dispositivos Móveis
 @media (max-width: 1205px) {  
     main {
-        @include divisorPadrao;
         flex-direction: column;
         gap: 3rem;
     
@@ -66,13 +66,21 @@ main {
         #main__box {
             border-style: none;
             border-radius: 0;
-            padding: 1.5rem;
+            padding: 1.5em;
             justify-content: center;
             background-color: $cor-paleta-amarelo;
 
             #main__inner_box {
                 @include semMargem;
                 padding: 3em 0 3em 0;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 4rem;
+                }
                 
                 p {
                     font-size: 3rem;
@@ -96,6 +104,8 @@ main {
     
 @media (max-width: 640px) {    
     main {
+        padding-top: 3em;
+
         #main__box {
             #main__inner_box {
                 h1 {

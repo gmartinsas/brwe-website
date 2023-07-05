@@ -1,7 +1,6 @@
 @import '../abstract/variaveis';
 
 nav {
-    @include divisorPadrao;
     box-shadow: 0 2px 10px #bdbdbd;
     justify-content: space-around;
     align-items: center;

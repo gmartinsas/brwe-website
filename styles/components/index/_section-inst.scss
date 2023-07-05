@@ -1,7 +1,6 @@
 @import '../../abstract/variaveis';
 
 #section__institucional {
-    @include divisorPadrao;
     align-items: center;
 
     #section__institucional_texto {
@@ -41,15 +40,11 @@
 
 @media (max-width: 640px) {
     #section__institucional {
-        margin-bottom: 0 !important;
-
         img {
             width: 90%;
         }
 
-        #section__institucional_texto {
-            margin-bottom: 1em;
-            
+        #section__institucional_texto {          
             #valores {
                 margin-top: 1em;
             }

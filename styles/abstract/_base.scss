@@ -50,6 +50,10 @@
     font-family: $fonte-texto-corrido;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .toggle {
     display: none !important;
     transition: 500ms;
