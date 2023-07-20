@@ -59,6 +59,30 @@
     transition: 500ms;
 }
 
+.red-font {
+    color: $cor-paleta-vermelho !important;
+}
+
+.red-bg {
+    background-color: $cor-paleta-vermelho !important;
+}
+
+.green-font {
+    color: $cor-paleta-verde !important;
+}
+
+.green-bg {
+    background-color: $cor-paleta-verde !important;
+}
+
+.purple-font {
+    color: $cor-paleta-roxo !important;
+}
+
+.purple-bg {
+    background-color: $cor-paleta-roxo !important;
+}
+
 /* HTML */
 body {
     background: $cor-bg-amarelo;

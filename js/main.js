@@ -5,8 +5,12 @@ const linksNavbar = document.getElementById('navbar');
 const tags = document.querySelectorAll('.tag');
 
 tags.forEach((tag) => {
-    tag.addEventListener('click', () => mudaProjeto(tag));
+    tag.addEventListener('click', () => clicaProjeto(tag));
 });
+
+function clicaProjeto(tag) {
+    mudaProjeto(tag);
+}
 
 
 /* Função para ativar o Menu Hamburger (Mobile) */
