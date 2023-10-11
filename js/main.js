@@ -21,3 +21,6 @@ botaoNavbar.addEventListener('click', () => {
         linksNavbar.classList.add("toggle");
     }
 });
+
+
+console.log('Teste de commit via Android.');
