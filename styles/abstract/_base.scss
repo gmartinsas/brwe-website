@@ -1,14 +1,7 @@
 /* Variáveis e Métodos */
 @import './variaveis';
 
-/* Webfonts */
-@font-face {
-    font-family: 'deutschlander-regular';
-    src: url('../src/fonts/deutschlander/deutschlander-webfont.woff2') format('woff2'),
-         url('../src/fonts/deutschlander/deutschlander-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
     font-family: 'modak-regular';

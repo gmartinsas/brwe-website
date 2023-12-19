@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /* Variáveis e Métodos */
-/* Webfonts */
-@font-face {
-  font-family: "deutschlander-regular";
-  src: url("../src/fonts/deutschlander/deutschlander-webfont.woff2") format("woff2"), url("../src/fonts/deutschlander/deutschlander-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
   font-family: "modak-regular";
   src: url("../src/fonts/modak/modak-regular-webfont.woff2") format("woff2"), url("../src/fonts/modak/modak-regular-webfont.woff") format("woff");
@@ -44,7 +38,7 @@
 }
 
 .texto-corrido {
-  font-family: "deutschlander-regular";
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* HTML */
@@ -54,29 +48,82 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-  height: 118px;
-  gap: 500px;
+nav {
+  box-shadow: 0 2px 10px #bdbdbd;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid #000;
 }
-
-#logo__principal {
-  height: 77px;
+nav .logo {
+  height: 5em;
 }
-
-.item__menu {
-  text-decoration: none;
+nav .lista__menu {
+  align-items: center;
+  gap: 1.5em;
+  padding: 2em;
+}
+nav .lista__menu .item__menu {
   color: #232323;
-  font-size: 64px;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  margin-left: 16px;
+  text-decoration: none;
+  font-weight: bold;
 }
-.item__menu:hover {
+nav .lista__menu .item__menu:hover {
   color: #0673FA;
+  border-bottom: 3px solid #232323;
+}
+nav .menu {
+  display: none;
+  cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0 !important;
+  }
+  nav .logo {
+    height: 5em;
+  }
+  nav .lista__menu {
+    padding: 1.5em 0 1em 0;
+    flex-wrap: wrap;
+  }
+  nav .lista__menu .item__menu {
+    font-size: 1.85rem;
+  }
+  nav .lista__menu .item__menu:hover {
+    border: 0;
+  }
+  nav .menu {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav .lista__menu {
+    order: 2;
+    display: inline-block;
+    padding: 1em 2em;
+    margin-top: 2em;
+    width: 100%;
+    background-color: #232323;
+  }
+  nav .lista__menu .item__menu {
+    color: white;
+    display: inline-block;
+    height: 1.25em;
+    letter-spacing: 1px;
+  }
+  nav .menu {
+    display: block;
+    width: 2.5em;
+  }
+}
 main {
   height: 760px;
 }
