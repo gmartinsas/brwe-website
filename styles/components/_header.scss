@@ -1,34 +1,29 @@
 @import '../abstract/variaveis';
 
-main {
-    height: 760px;
+header {
+    height: 45em;
 
     #main__content {
-        width: 1466px;
-        height: 577px;
-
+        padding: 5em;
+        align-items: center;
+        
         img {
-            height: 564px;
-            width: 580px;
-            margin: 115px 0 0 80px;
+            height: 35em;
+            width: auto;
         }
 
         #main__box {
-            height: 240px;
-            width: 800px;
+            height: 15em;
+            width: 40%;
             border: 2px solid #000;
-            border-radius: 174px;
+            border-radius: 10em 0 0 10em;
             text-align: end;
             position: absolute;
-            left: 746px;
-            top: 392px;
+            right: 0;
 
             #main__inner_box {
                 flex-direction: column;
-                justify-content: center;
-                position: absolute;
-                top: 56px;
-                left: 111px;
+                padding: 2em 1em 2em 0;
 
                 h1 {
                     font-weight: lighter;
@@ -38,7 +33,7 @@ main {
                 }
     
                 h2 {
-                    font-size: 56px;
+                    font-size: 3.5em;
                     margin: 0px;
 
                     & strong {
@@ -48,4 +43,8 @@ main {
             }
         }
     }
+}
+
+article {
+    width: 100%;
 }
